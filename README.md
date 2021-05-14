@@ -4,7 +4,7 @@
 
 ```bash
   mkdir -p ~/Argus/docker
-  git clone https://github.com/Mrrabbitan/Fee-dev-docker ~/Argus/docker
+  git clone https://github.com/Mrrabbitan/youdaoDocker.git ~/Argus/docker
 ```
 
 # 当前支持环境 & 配置
