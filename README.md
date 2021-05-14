@@ -3,8 +3,8 @@
 ## 拉取代码
 
 ```bash
-  mkdir -p ~/www/fee-docker
-  git clone https://github.com/alphawq/Fee-dev-docker.git ~/www/fee-docker
+  mkdir -p ~/Argus/docker
+  git clone https://github.com/Mrrabbitan/Fee-dev-docker ~/Argus/docker
 ```
 
 # 当前支持环境 & 配置
@@ -63,7 +63,7 @@ Kibana 初始化连接时间较长，可以通过`docker log [Kibana Container N
 - debug 模式启动
 
   ```bash
-  &&  cd ~/www/fee-docker                                     \
+  &&  cd ~/Argus/docker                                    \
   &&  docker-compose build                                    \
   &&  echo '构建成功, 自动启动服务'                              \
   &&  docker-compose up
@@ -72,9 +72,9 @@ Kibana 初始化连接时间较长，可以通过`docker log [Kibana Container N
 - 服务方式启动
 
   ```bash
-  docker-compose -f ~/www/fee-docker/docker-compose.yml up -d
+  docker-compose -f ~/Argus/docker/docker-compose.yml up -d
   // 或
-  cd ~/www/fee-docker && docker-compose up -d
+  cd ~/Argus/docker && docker-compose up -d
   ```
 
 # 查看容器运行状态
@@ -82,3 +82,9 @@ Kibana 初始化连接时间较长，可以通过`docker log [Kibana Container N
 - docker ps
 - docker logs [container NAME]
 - docker run
+
+介绍文档 ：
+
+- memcache：https://zhuanlan.zhihu.com/p/25487945
+- kibana: https://zhuanlan.zhihu.com/p/102185616
+- docker: https://zhuanlan.zhihu.com/p/103083079
